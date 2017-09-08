@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@mipmap/user_login" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/acet_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_info_et_bg"
+            android:ems="10"
+            android:hint="@string/text_please_enter_user_name"
+            android:maxLines="1" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/acet_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/acet_account"
+            android:layout_alignStart="@+id/acet_account"
+            android:layout_below="@+id/acet_account"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/login_info_et_bg"
+            android:ems="10"
+            android:hint="@string/text_please_enter_password"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/accb_keep_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/acet_pwd"
+            android:layout_alignStart="@+id/acet_pwd"
+            android:layout_below="@+id/acet_pwd"
+            android:layout_marginTop="27dp"
+            android:text="@string/text_keep_password" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/accb_auto_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/accb_keep_password"
+            android:layout_alignBottom="@+id/accb_keep_password"
+            android:layout_alignEnd="@+id/acet_pwd"
+            android:layout_alignRight="@+id/acet_pwd"
+            android:text="@string/text_auto_login" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/acb_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/acb_register"
+            android:layout_alignBottom="@+id/acb_register"
+            android:layout_alignLeft="@+id/accb_keep_password"
+            android:layout_alignStart="@+id/accb_keep_password"
+            android:text="@string/text_login" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/acb_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/acet_pwd"
+            android:layout_alignRight="@+id/acet_pwd"
+            android:layout_below="@+id/accb_auto_login"
+            android:layout_marginTop="22dp"
+            android:text="@string/text_register" />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_query_park_curr_money_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="停车场当前费率查询："
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_query_park_curr_money"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/tv_query_park_curr_money_title"
+            android:gravity="center|left"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_query_park_curr_money"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/tv_query_park_curr_money"
+            android:background="@drawable/button_selector"
+            android:text="查询" />
+
+        <TextView
+            android:id="@+id/tv_set_park_curr_money_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="22sp"
+            android:layout_below="@+id/tv_query_park_curr_money_title"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="设置停车场费率查询："
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_set_park_curr_money"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/tv_set_park_curr_money_title"
+            android:layout_toRightOf="@+id/tv_set_park_curr_money_title"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/et_set_park_money_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/tv_set_park_curr_money_title"
+            android:layout_toRightOf="@+id/tv_set_park_curr_money"
+            android:gravity="center"
+            android:text="停车场费率："
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/et_set_park_money"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/et_set_park_money_title"
+            android:layout_toRightOf="@+id/et_set_park_money_title"
+            android:hint="0-99"
+            android:inputType="number"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:text=""
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/btn_set_park_curr_money_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/et_set_park_money"
+            android:layout_toRightOf="@+id/et_set_park_money"
+            android:gravity="center"
+            android:text="元/次"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_set_park_curr_money"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/btn_set_park_curr_money_title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn_set_park_curr_money_title"
+            android:background="@drawable/button_selector"
+            android:text="设置"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_query_park_kongxianchewei_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_set_park_curr_money_title"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="当前空闲车位查询："
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_query_park_kongxianchewei"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/tv_query_park_kongxianchewei_title"
+            android:layout_toRightOf="@+id/tv_query_park_kongxianchewei_title"
+            android:gravity="center|left"
+            android:text=""
+            android:textColor="@color/black"
+
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_query_park_kongxianchewei"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/tv_query_park_kongxianchewei"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_query_park_kongxianchewei"
+            android:background="@drawable/button_selector"
+            android:text="查询" />
+
+        <LinearLayout
+            android:id="@+id/ll_park_loaction_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_query_park_kongxianchewei"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/btn_query_park_kongxianchewei"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_park_loaction_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@mipmap/free_location" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1号"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_park_loaction_2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ll_park_loaction_1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ll_park_loaction_1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_park_loaction_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@mipmap/free_location" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2号"
+                android:textColor="@color/black"
+             />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

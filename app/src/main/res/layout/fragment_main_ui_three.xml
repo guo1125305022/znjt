@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_environmental_index"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="36dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/text_environmental_index" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_manual_control"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ll_environmental_index"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/text_manual_control" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_system_settings"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ll_manual_control"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/text_system_settings" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_get_the_credit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ll_environmental_index"
+            android:layout_alignStart="@+id/ll_environmental_index"
+            android:layout_alignTop="@+id/ll_zi_xun_tong"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/text_get_the_credit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_rural_wechat_business"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ll_manual_control"
+            android:layout_alignStart="@id/ll_manual_control"
+            android:layout_alignTop="@id/ll_zi_xun_tong"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/text_rural_wechat_business" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_zi_xun_tong"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ll_system_settings"
+            android:layout_alignStart="@+id/ll_system_settings"
+            android:layout_below="@+id/ll_system_settings"
+            android:layout_marginTop="22dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/text_zi_xun_tong" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/ll_good_Ideas"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ll_get_the_credit"
+            android:layout_alignStart="@+id/ll_get_the_credit"
+            android:layout_below="@+id/ll_get_the_credit"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/text_ideas" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="20dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_huangjing"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginLeft="45dp"-->
+    <!--android:background="@color/colorAccent" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_shoudong"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginLeft="45dp"-->
+    <!--android:background="@color/colorAccent" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_xitong"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginLeft="45dp"-->
+    <!--android:background="@color/colorAccent" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="20dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_huanjing"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="53dp"-->
+    <!--android:text="环境指标" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_shoudong"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="58dp"-->
+    <!--android:text="手动控制" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_xitong"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="58dp"-->
+    <!--android:text="系统设置" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="20dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_nongxin"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginLeft="45dp"-->
+    <!--android:background="@color/colorAccent" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_nongdian"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginLeft="45dp"-->
+    <!--android:background="@color/colorAccent" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_zhixun"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginLeft="45dp"-->
+    <!--android:background="@color/colorAccent" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="20dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_nongxin"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="53dp"-->
+    <!--android:text="弄信贷" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_nongdian"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="73dp"-->
+    <!--android:text="农电微商" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_zhixun"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="65dp"-->
+    <!--android:text="质询通" />-->
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

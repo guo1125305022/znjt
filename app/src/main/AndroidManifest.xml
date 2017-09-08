@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.znjtgs">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.LogoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.NavigationActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.ActivityAllTest" />
+        <activity android:name=".Activity.MyAccountActivity" />
+        <activity android:name=".Activity.MyCardActivity" />
+        <activity android:name=".Activity.LoactActivity" />
+        <activity android:name=".Activity.MyRoadActivity" />
+        <activity android:name=".Activity.ParkQueryActivity" />
+        <activity android:name=".Activity.BusQueryActivity" />
+        <!-- 我的道路 -->
+        <!-- 环境指标 -->
+        <activity android:name=".Activity.SensorActivity" />
+        <!-- 充值历史纪录 -->
+        <activity android:name=".Activity.CarRechagerHistoryActivity" />
+        <!-- 车辆限行 -->
+        <activity android:name=".Activity.CarLimitActivity" />
+        <!-- 停车日志（停车场和ETC） -->
+        <activity android:name=".Activity.CarParkHistoryActivity" />
+        <!-- 路况查询 -->
+        <activity android:name=".Activity.RoadConditionQueryActivity" />
+        <!--红绿灯管理-->
+        <activity android:name=".Activity.ActivityRedGreeLightManager" />
+
+        <service
+            android:name=".server.BusCapServer"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

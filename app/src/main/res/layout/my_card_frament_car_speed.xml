@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridView
+        android:layout_marginTop="20dp"
+        android:id="@+id/gv_car_speel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="30dp"
+        android:gravity="center"
+        android:horizontalSpacing="30dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="20dp" />
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:orientation="vertical" >-->
+        <!--<LinearLayout -->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+
+             <!--<TextView-->
+                 <!--style="@style/tv_show_style"-->
+                 <!--android:layout_width="wrap_content"-->
+                 <!--android:layout_height="wrap_content"-->
+                 <!--android:text="@string/tv_car_speel_title" />-->
+        <!---->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_query_curr_card_speed"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--style="@style/tv_show_style" />-->
+            <!---->
+        <!--</LinearLayout>-->
+       <!---->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal" >-->
+
+            <!--<TextView-->
+                <!--style="@style/tv_show_style"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/tv_car_id" />-->
+
+            <!--<Spinner-->
+                <!--android:id="@+id/sp_my_card_id"-->
+                <!--android:layout_width="105dp"-->
+                <!--android:layout_height="50dp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_query_my_card_speed"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:background="@drawable/button_selector"-->
+            <!--android:text="查询" />-->
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

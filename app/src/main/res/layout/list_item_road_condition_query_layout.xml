@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="30dp">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_road_condition_query_road_id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="1号道路:" />
+
+        <TextView
+            android:id="@+id/tv_road_condition_road_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/tv_road_condition_query_road_id_title" />
+
+        <TextView
+            android:id="@+id/tv_road_car_id_title"
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_road_condition_query_road_id_title"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="1号小车:" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/wc_road_car_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_road_car_id_title"
+            android:layout_below="@+id/tv_road_condition_query_road_id_title"
+            android:layout_toRightOf="@+id/tv_road_condition_road_state" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

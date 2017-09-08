@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/acet_server_address_tilte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_server_address"
+        android:layout_marginLeft="73dp"
+        android:layout_marginStart="73dp"
+        android:layout_alignBaseline="@+id/acet_server_address"
+        android:layout_alignBottom="@+id/acet_server_address"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/acet_server_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/acet_server_address_tilte"
+        android:layout_toRightOf="@+id/acet_server_address_tilte"
+        android:background="@drawable/login_info_et_bg"
+        android:ems="10"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:hint="@string/text_server_address_fromat" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/acet_server_port_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/acet_server_port"
+        android:layout_alignEnd="@+id/acet_server_address_tilte"
+        android:layout_alignRight="@+id/acet_server_address_tilte"
+        android:inputType="number"
+        android:text="@string/text_server_port" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/acet_server_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/acet_server_address"
+        android:layout_alignStart="@+id/acet_server_address"
+        android:layout_below="@+id/acet_server_address"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_info_et_bg"
+        android:ems="10"
+        android:hint="@string/text_server_port_fromat"
+        android:inputType="number" />
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@mipmap/user_login" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/acet_pwd"
+            style="@style/et_style"
+            android:layout_alignLeft="@+id/acet_account"
+            android:layout_alignStart="@+id/acet_account"
+            android:layout_below="@+id/acet_account"
+            android:hint="@string/text_please_enter_user_pwd"
+            android:inputType="textPassword" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/acet_account"
+            style="@style/et_style"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/text_please_enter_user_name" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/acet_phone_number"
+            style="@style/et_style"
+            android:layout_alignLeft="@+id/acet_re_pwd"
+            android:layout_alignStart="@+id/acet_re_pwd"
+            android:layout_below="@+id/acet_re_pwd"
+            android:hint="@string/text_please_enter_user_phone_number" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/acet_re_pwd"
+            style="@style/et_style"
+            android:layout_alignLeft="@+id/acet_pwd"
+            android:layout_alignStart="@+id/acet_pwd"
+            android:layout_below="@+id/acet_pwd"
+            android:hint="@string/text_please_enter_re_user_pwd"
+            android:inputType="textPassword" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/acb_confirm_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/acb_cancel_resgister"
+            android:layout_alignBottom="@+id/acb_cancel_resgister"
+            android:layout_alignEnd="@+id/acet_phone_number"
+            android:layout_alignRight="@+id/acet_phone_number"
+            android:text="@string/text_register" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/acb_cancel_resgister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/acet_phone_number"
+            android:layout_marginTop="24dp"
+            android:text="@string/text_cancel" />
+    </RelativeLayout>
+
+</FrameLayout>
